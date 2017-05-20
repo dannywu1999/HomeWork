@@ -13,7 +13,7 @@ int main(){
 		}		
 		if((2*M+D)%3==2){
 			printf("¤j¦N\n");
-			}
+		}
 	}
 }
 
