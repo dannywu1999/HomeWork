@@ -3,44 +3,29 @@
 
 int max(int *numberArray, int Size)//*numberArray打數字 Size它的範圍 
 {
-	int result = 0,i;
-	for (i = 0 ; i < Size ;i++)
+	int i;//宣告i 
+	
+	int Max = INT_MIN;//宣告 Max = INT_MIN
+	
+	for (i = 0 ; i < Size ;i++)//尋訪 i從0開始計算 如果i小於Size 那他就加1 
 	{
-		
-		printf("%d\n",numberArray[i]);
+		if(Max < numberArray[i])//如果numberArray[i]大於Max 
+		{
+			Max = numberArray[i];//Max等於numberArray[i]
+		} 
 	}
-	return result;
+	return Max;//回傳Max 
 }
 
 int main()
 {
-	char Array[5];
-	int N,Max,i;
-	int result = 0;
-	while(scanf("Array[5]",Array)!=EOF)
+	int Array[5];//宣告 Array[5]
+	int N,Max,i;//宣告 N和Max和i
+	int result = 0;//宣告 result = 0
+	while(scanf("%d %d %d %d %d",&Array[0],&Array[1],&Array[2],&Array[3],&Array[4])!=EOF)//while迴圈 輸入與輸出 
 	{
-	for (i=0;i<5;i++)
-		{
-			Array[i];
-			if(Array[i]>Max)
-			{
-				Array[i];
-				{
-					Max = Array[i];	
-				}
-			}
-		}
-	printf("The max number is %d\n",max);
-	/*Array[0] = 12;
-	z]
-	Array[1] = 0;
-	Array[2] = 1;
-	Array[3] = 5;
-	Array[4] = 90;
-
-	max(Array, 5);*/
-	return 0;
-	return result;
+		printf("The max number is %d\n",max(Array, 5));//顯示 最大值 
 	}
+	return 0;
 }	
 	

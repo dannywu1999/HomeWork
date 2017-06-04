@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<math.h>
+
 
 int add(int A, int B){
 	int result = 0;
@@ -60,3 +60,4 @@ int main(){
 	printf("result:A/B=%d\n",result);
 	printf("result:A/B=%d\n", divide(A, B));
 }
+
