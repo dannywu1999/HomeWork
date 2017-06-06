@@ -5,13 +5,13 @@
 void showRandom(int *Array, int Size)//Array打數字 Size它的範圍 
 {
 	int i;//宣告i
-	
-	Size = 6;
-	
+
 	for (i = 0 ; i < Size ; i++)//尋訪 i從0開始計算 如果i小於Size 那他就加1
 	{
-		printf("%d ",Array[i]);		
+		printf("%d ",Array[i]);	
+			
 	}
+	printf("\n");//換行 
 }
 
 void generateRandom(int *Array, int Size)//Array打數字 Size它的範圍 
@@ -34,11 +34,16 @@ void generateRandom(int *Array, int Size)//Array打數字 Size它的範圍
 
 int main()
 {
-	int Array[100],Size=49;//宣告 Array[20]和Size 
-	//scanf("%d",&Size);
+	int Array[100],Size = 49, N;//宣告 Array[20]和Size 
+	scanf("%d",&N);
 	srand(time(NULL));//亂數種子	
-	generateRandom(Array,Size);//代genetateRandom function(產生Random) 
-	showRandom(Array,Size);//代showRandom function(顯示Random) 
+	
+	for(int i = 0 ; i < N ; i++)//用for迴圈寫開幾期的程式碼 
+	{
+		generateRandom(Array,Size);//代genetateRandom function(產生Random)
+		showRandom(Array,6);//代showRandom function(顯示Random) 
+	}
+	
 	 
 	return 0;
 }	
