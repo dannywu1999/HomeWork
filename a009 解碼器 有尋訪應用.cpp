@@ -12,7 +12,7 @@ int main() {
 	
 	while(scanf("%s", input) != EOF){//while迴圈連續輸入字串 
 		for(offset=-128; offset < 128; offset++){//遍歷or尋訪(把所有的可能跑過一遍)offset 
-			
+		
 			if(input[0]+offset == '*'){//看加多少會變成* 
 				//printf("i= %d %c\n", offset, input[0]+offset);
 				for(i=0 ; i < strlen(input) ; i++ ){//strlen() 字串長度 

@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<math.h>
 
+int XX = 0;
+
 int add(int A, int B){
 	int result = 0;
 	
